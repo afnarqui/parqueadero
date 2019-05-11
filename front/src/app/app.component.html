@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand">Parqueadero Alégrate</a>
+  <button (click)="abrir()"   class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+     
+    </span>
+    <div class="collapse" [class.show]="show">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" routerLink="/celdas">Celdas <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/informes">Informes</a>
+            </li>          
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/commits">Commits</a>
+          </li>
+      </ul>
+    </div>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" routerLink="/celdas">Celdas <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/informes">Informes</a>
+            </li>          
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/commits">Commits</a>
+          </li>
+    </ul>
+
+  </div>
+</nav>
+<br/>
+
+<router-outlet></router-outlet>
